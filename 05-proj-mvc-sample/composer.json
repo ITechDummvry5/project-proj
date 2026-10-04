@@ -1,0 +1,17 @@
+{
+    "name": "carmilla-dummvry/mvc-freamework-it-dummvry",
+    "autoload": {
+        "psr-4": {
+        "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "ITechDummvry5",
+            "email": "itechdummvry@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

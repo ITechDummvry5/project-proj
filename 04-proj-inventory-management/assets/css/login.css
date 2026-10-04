@@ -1,0 +1,207 @@
+body{ 
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.split{ 
+    display: flex;
+    flex-direction: column; 
+}
+h1{
+    font-size: 47px;
+}
+/* Pic start here */
+.sidepic{
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 3)),  url('../image/UNSPLASH.jpg');
+    background-size: cover;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 20vh;
+}
+
+
+.sidepic .copy{ 
+text-align:end;
+color: white;
+font-size: 1.2rem;
+}
+
+img{display: block; 
+    max-width: 100%;
+}
+
+.sidepic,.sideform{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Form Start*/
+.sideform {
+    padding: 15px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+   
+}
+form{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.sideform form{ 
+width: 305px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sideform input[type="text"],
+.sideform input[type="email"],
+.sideform input[type="password"] {
+    width: 100%; /* Make the input fields full width */
+    padding: 8px; /* Add some padding inside the input fields */
+    border-radius: 5px; /* Add border radius */
+    border: 1px solid #ccc; /* Add a border */
+    font-size: 1rem; /* Adjust the font size */
+    margin-bottom: 10px; /* Add some margin at the bottom of each input */
+}
+
+@media screen and (min-width:900px) {
+    .split{
+        flex-direction: row;
+        height: 100dvh;
+        display: flex;
+    }
+    .sidepic{
+        
+        width: 45%;
+        height: auto;
+    }
+    .sideform{
+        
+        width: 55%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 42px;
+        
+    }
+}
+/* Btn start */
+.bbtn{
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(33,37,41);
+    color: #eee;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  
+  .bbtn:hover {
+    transform: translateY(-1px);
+    color:#aaa;
+  }
+  
+  .bbtn-span {
+    color: #aaa;
+  }
+         /* Main intro section styling */
+         html,
+         body,
+         .intro {
+             height: 100%;
+         }
+ 
+         @media (min-width: 550px) and (max-width: 750px) {
+             html,
+             body,
+             .intro {
+                 height: 550px;
+             }
+         }
+ 
+         @media (min-width: 800px) and (max-width: 850px) {
+             html,
+             body,
+             .intro {
+                 height: 550px;
+             }
+         }
+ 
+         /* Link styling */
+         a.link {
+             font-size: .875rem;
+             color: #2993c4;
+         }
+         a.link:hover, 
+         a.link:active {
+             color: #174897;
+         }
+ 
+         /* Additional styles for the carousel */
+         .carousel-item {
+             transition: transform 0.9s ease-in-out;
+         }
+         .carousel {
+             overflow: hidden;
+         }
+         .carousel-item img {
+             width: 100%;
+             height: auto;
+             max-height: 400px;
+             display: block;
+             margin: auto;
+         }
+         @media (max-width: 350px) {
+             #imageCarousel img {
+                 width: 100%;
+                 height: auto;
+             }
+         }
+         .fixed-image {
+            width: 100%; /* Ensures the image takes the full width of the container */
+            display: block; /* Makes sure image behaves like a block-level element */
+            margin: 0 auto; /* Centers the image horizontally */
+            object-fit: contain;
+            }
+
+            .input-group {
+                display: flex;
+            }
+            
+            .input-group input {
+                flex: 1;  /* Allow input to take available space */
+                height: 38px;  /* Set a fixed height */
+                padding: 2px;  /* Maintain padding */
+                border-radius: 5px;  /* Match the border radius */
+                border: 1px solid #ccc;  /* Match the border style */
+            }
+            
+            .input-group .btn {
+                height: 38px;  /* Match the height of the input */
+                padding: 0 10px;  /* Add horizontal padding */
+                border-radius: 5px;  /* Match the border radius */
+                margin-left: 3px;  /* Space between input and button */
+                display: flex;  /* Ensure proper alignment of icon */
+                justify-content: center;  /* Center the icon */
+                align-items: center;  /* Center the icon vertically */
+            }
+
+            /* Add this to your assets/css/login.css or a similar stylesheet */
+
+
+            
+  
+
+
+
+
+

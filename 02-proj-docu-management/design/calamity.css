@@ -1,0 +1,179 @@
+/* Apply box-sizing for all elements to avoid unexpected overflow */
+
+/* containside */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* outline: 1px dashed red; */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+/* outline: solid 5px rgb(4, 6, 119); */
+
+}
+.parent {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    width: 100%;
+    /* outline: solid 5px #0C84F2; */
+    overflow: visible; /* Prevent cropping */
+}
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;  /* Adjust for print */
+    grid-template-rows: auto auto auto;  /* for Row vertical;  */
+    /* grid-template-rows: auto auto 0.9fr 2fr 1.7fr;   for Row Vertical;*/ 
+    grid-auto-flow: row;
+    grid-template-areas:
+        "HEADER HEADER HEADER"
+        "TITLEPAGE TITLEPAGE TITLEPAGE"
+        "FOOTER FOOTER FOOTER";
+}
+/* containside */
+
+/* mediaside */
+
+@media print {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* outline: none; */
+    }
+    body{
+        outline: none;
+    }
+    .parent {
+        background: none;
+        margin: 0;
+        outline: none;
+    }
+    .containers {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+}
+/* mediaside */
+
+/* headerside */
+.HEADER {
+    grid-area: HEADER;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 155px;  
+    margin-top: 30px;  
+    margin-bottom: 20px;
+}
+
+.header-left,
+.header-right {
+    flex: 0 0 auto;  
+    display: flex;
+    align-items: center; 
+    padding-inline: 33px;
+}
+
+.header-text {
+    flex: 2;
+    text-align: center;
+    line-height: 1.2; 
+}
+
+.HEADER img {
+    max-width: 120px;  
+    height: auto;
+}
+
+.HEADER p {
+    margin: 0;
+    padding: 0;
+}
+/* headerside */
+
+
+/* titleside */
+.TITLEPAGE {
+    grid-area: TITLEPAGE;
+    text-align: start;
+    padding-inline: 70px;
+    padding-block-end: 100px;
+}
+
+
+/* titleside */
+
+
+
+
+
+/* footerside */
+.FOOTER {
+    position: relative;
+    height: 320px; /* Adjust as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 78px;
+}
+
+.footer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.new-footer-image {
+    position: absolute;  /* Position the new image absolutely */
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;  /* Place this image behind the original footer image */
+}
+
+.center-content {
+    z-index: 2;
+    color: #000;
+    flex: 1;
+    text-align: center;
+}
+
+
+.consilor-info {
+    position: absolute;
+    left: 110px; /* Adjust positioning as needed */
+    bottom: 283px; /* Adjust to align correctly */
+    z-index: 2;
+}
+
+
+.seal-notice {
+    font-size: 13px;
+    font-style: italic;
+    color: #6c6c6c;
+    text-align: center;
+    margin-top: 10px; /* Space above seal-notice */
+}
+
+
+.TITLEPAGE { grid-area: TITLEPAGE; }
+.FOOTER { grid-area: FOOTER; }
+
+/* footer margin top  */
+/* header margin bottom */

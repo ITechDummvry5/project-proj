@@ -1,0 +1,58 @@
+/* Ensure this CSS is in your stylesheet or inside a <style> tag in the <head> */
+
+.page-3 {
+    position: relative;
+    padding-bottom: 60px; /* Ensure space for the SVG icon */
+}
+
+#see-more-container {
+    position: absolute;
+    bottom: 20px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#see-more-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    fill: #007bff; /* Blue color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Optional hover effect */
+#see-more-icon:hover {
+    fill: #02070c; /* Darker blue on hover */
+}
+
+
+.badge.bg-danger {
+    background-color: #dc3545;
+  }
+/* Badge Styling */
+.nav-link .badge {
+    position: relative;
+    top: -15px; /* Adjust based on font size and alignment */
+    margin-left: 5px; /* Spacing between text and badge */
+    background-color: #dc3545; /* Badge background color */
+    color: #fff; /* Badge text color */
+    padding: 0.2rem 0.6rem; /* Adjust padding as needed */
+    font-size: 0.75rem; /* Font size for badge text */
+  }
+  textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+textarea {
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll; /* To keep the scrolling functionality */
+}
+
+.select2-container .select2-selection--single{
+    height: 2.4rem !important;
+  
+  }
+  select2-container--default .select2-selection--single .select2-selection__rendered {
+    height: 35px !important;
+  }

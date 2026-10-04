@@ -1,0 +1,11 @@
+Important The Config Folder
+
+    Function Centralize And Simplified Function Core  In order To Minimize Coding In the Custom Folder For  Author Code  And Book Code  PHP 
+        -> CRUD method 
+        -> JOIN Tables Between Author Table And Books Table
+
+    Index.php 
+        -> Pass The Data Form In the Custom Folder -> The authorCode.php And bookCode.php  
+        -> It Also Have the pop Up Code  Using  Js Script Modal And It have Filter For Features Limit 4 Lates  And  Divide Into Genre 
+
+
